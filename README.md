@@ -25,13 +25,9 @@ To get started with the project, follow these steps:
 
 2. Generate an API key from [News API](https://newsapi.org/docs/endpoints/everything). You'll need this API key to fetch news articles in the app.
 
-3. Create a file named `apikey.properties` in the root directory of the project.
+3. Open the `NewsRepositoryImpl.kt` file in the `data` package of your project.
 
-4. Add your API key to `apikey.properties` file:
-
-    ```properties
-    NEWS_API_KEY="YOUR_API_KEY_HERE"
-    ```
+4. Replace the placeholder `YOUR_API_KEY_HERE` with your actual API key.
 
 5. Build and run the project using Android Studio or by executing the following command:
 

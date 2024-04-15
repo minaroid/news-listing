@@ -11,7 +11,7 @@ class NewsRepositoryImpl @Inject constructor(private val networkManager: Network
 
     override suspend fun fetchArticles(q: String): List<Article> {
         val query: HashMap<String, Any> = HashMap()
-        query["apiKey"] = "" // TODO move to config..
+        query["apiKey"] = "YOUR_API_KEY_HERE" // TODO move to config..
         query["q"] = q
 //        query["pageSize"] = 1
         val news  = this.networkManager.getRequest(api = "/v2/everything", query = query, parseClass = NewsDTO::class.java)
